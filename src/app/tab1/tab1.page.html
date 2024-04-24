@@ -1,0 +1,72 @@
+<ion-header [translucent]="true">
+  <ion-toolbar color="dark">
+    <ion-title>
+      Conheça o Espirito Santo
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-content class="ion-padding">
+    <ion-refresher slot="fixed" (ionRefresh)="handleRefresh($event)">
+      <ion-refresher-content></ion-refresher-content>
+    </ion-refresher>
+  <ion-card>
+    <ion-card-header>
+      <ion-img src="../../assets/imgs/amorES.png" alt="Espirito Santo"></ion-img>
+      <ion-card-subtitle>O que fazer</ion-card-subtitle>
+      <ion-card-title>Bem-vindo ao Espirito Santo</ion-card-title>
+    </ion-card-header>
+
+    <ion-card-content class="ion-text-justify">  
+      O Espírito Santo é um estado brasileiro localizado na região Sudeste. Sua capital é Vitória, e sua cidade mais populosa é Vila Velha. O estado faz divisa com o oceano Atlântico a leste, com a Bahia ao norte, com Minas Gerais a oeste e noroeste, e com o Rio de Janeiro ao sul.
+    </ion-card-content>    
+  </ion-card>
+
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title>Clique para conhecer</ion-card-title>
+    </ion-card-header>
+    <ion-item href="/agroturismo" class="ion-activated">
+      <ion-icon slot="start" name="leaf"></ion-icon>
+      <ion-label>Agroturismo</ion-label>
+    </ion-item>
+
+    <ion-item href="https://setur.es.gov.br/" class="ion-activated" target="_blank">
+      <ion-icon slot="start" name="bicycle"></ion-icon>
+      <ion-label>Aventura</ion-label>
+    </ion-item>
+
+    <ion-item href="https://setur.es.gov.br/" class="ion-activated" target="_blank">
+      <ion-icon slot="start" name="wine"></ion-icon>
+      <ion-label>Ecoturismo</ion-label>
+    </ion-item>
+
+    <ion-item href="https://setur.es.gov.br/" class="ion-activated" target="_blank">
+      <ion-icon slot="start" name="walk"></ion-icon>
+      <ion-label>Parques</ion-label>
+    </ion-item>
+
+    <ion-item href="https://setur.es.gov.br/" class="ion-activated" target="_blank">
+      <ion-icon slot="start" name="sunny"></ion-icon>
+      <ion-label>Sol e Praia</ion-label>
+    </ion-item>
+  </ion-card>
+
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title>Praias Favoritas</ion-card-title>
+    </ion-card-header>
+    <ion-item *ngFor="let item of itensFavoritos" (click)="siga(item.url)">
+      <ion-thumbnail slot="start"> <img src={{item.img}}> </ion-thumbnail>
+        <ion-label>
+          <ion-text color="primary">
+            <h3>{{ item.name }}</h3>
+          </ion-text>
+          <p>{{ item.location }}</p>
+        </ion-label>
+        <ion-note slot="end">{{item.regiao}}</ion-note>
+    </ion-item>
+  </ion-card>
+
+</ion-content>

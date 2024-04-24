@@ -1,0 +1,78 @@
+/*
+ * App Global CSS
+ * ----------------------------------------------------------------------------
+ * Put style rules here that you want to apply globally. These styles are for
+ * the entire app and not just one component. Additionally, this file can be
+ * used as an entry point to import other CSS/Sass files to be included in the
+ * output CSS.
+ * For more information on global stylesheets, visit the documentation:
+ * https://ionicframework.com/docs/layout/global-stylesheets
+ */
+
+/* Core CSS required for Ionic components to work properly */
+@import "@ionic/angular/css/core.css";
+
+/* Basic CSS for apps built with Ionic */
+@import "@ionic/angular/css/normalize.css";
+@import "@ionic/angular/css/structure.css";
+@import "@ionic/angular/css/typography.css";
+@import "@ionic/angular/css/display.css";
+
+/* Optional CSS utils that can be commented out */
+@import "@ionic/angular/css/padding.css";
+@import "@ionic/angular/css/float-elements.css";
+@import "@ionic/angular/css/text-alignment.css";
+@import "@ionic/angular/css/text-transformation.css";
+@import "@ionic/angular/css/flex-utils.css";
+
+/* Adiciona a cor amarela */
+:root {
+	--ion-color-suncolor: #fffb80;
+	--ion-color-suncolor-rgb: 255,251,128;
+	--ion-color-suncolor-contrast: #000000;
+	--ion-color-suncolor-contrast-rgb: 0,0,0;
+	--ion-color-suncolor-shade: #e0dd71;
+	--ion-color-suncolor-tint: #fffb8d;
+}
+
+.ion-color-suncolor {
+	--ion-color-base: var(--ion-color-suncolor);
+	--ion-color-base-rgb: var(--ion-color-suncolor-rgb);
+	--ion-color-contrast: var(--ion-color-suncolor-contrast);
+	--ion-color-contrast-rgb: var(--ion-color-suncolor-contrast-rgb);
+	--ion-color-shade: var(--ion-color-suncolor-shade);
+	--ion-color-tint: var(--ion-color-suncolor-tint);
+}
+
+/* Adiciona a cor rosa */
+:root {
+	--ion-color-rosa: #ec0982;
+	--ion-color-rosa-rgb: 236,9,130;
+	--ion-color-rosa-contrast: #000000;
+	--ion-color-rosa-contrast-rgb: 0,0,0;
+	--ion-color-rosa-shade: #d00872;
+	--ion-color-rosa-tint: #ee228f;
+}
+
+.ion-color-rosa {
+	--ion-color-base: var(--ion-color-rosa);
+	--ion-color-base-rgb: var(--ion-color-rosa-rgb);
+	--ion-color-contrast: var(--ion-color-rosa-contrast);
+	--ion-color-contrast-rgb: var(--ion-color-rosa-contrast-rgb);
+	--ion-color-shade: var(--ion-color-rosa-shade);
+	--ion-color-tint: var(--ion-color-rosa-tint);
+}
+
+:root {
+    
+    --swiper-pagination-color: var(--swiper-theme-color);
+    --swiper-pagination-bullet-size: 8px;
+    --swiper-pagination-bullet-width: 8px;
+    --swiper-pagination-bullet-height: 8px;
+    --swiper-pagination-bullet-inactive-color: #000;
+    --swiper-pagination-bullet-inactive-opacity: 0.2;
+    --swiper-pagination-bullet-opacity: 1;
+    --swiper-pagination-bullet-horizontal-gap: 4px;
+    --swiper-pagination-bullet-vertical-gap: 6px;
+    
+  }

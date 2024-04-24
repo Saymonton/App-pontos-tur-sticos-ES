@@ -1,0 +1,123 @@
+<ion-header [translucent]="true">
+  <ion-toolbar color="secondary">
+    <ion-buttons slot="start">
+      <ion-back-button></ion-back-button>
+    </ion-buttons>
+    <ion-title>Pedra da Cebola</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+
+<ion-content [fullscreen]="true">
+  <ion-card>
+    <ion-card-header>
+      <swiper-container [pagination]="true">
+        <swiper-slide>
+          <ion-img src="https://www.viajali.com.br/wp-content/uploads/2022/04/pedra-da-cebola-00.jpg"></ion-img>
+        </swiper-slide>
+        <swiper-slide>
+          <ion-img src="https://upload.wikimedia.org/wikipedia/commons/b/ba/Parque_Pedra_da_Cebola_2.jpg"></ion-img>
+        </swiper-slide>
+        <swiper-slide>
+          <ion-img src="https://imgmd.net/images/v1/guia/1703352/parque-pedra-da-cebola.jpg"></ion-img>
+        </swiper-slide>
+      </swiper-container>
+    </ion-card-header>
+    <ion-card-content>
+      <ion-card-title>Parque Pedra da Cebola</ion-card-title>
+      <ion-card-subtitle>Vitória</ion-card-subtitle>
+      <ion-card-subtitle>Entrada gratuita</ion-card-subtitle>
+      <ion-card-subtitle>Descrição: O Parque Pedra da Cebola é um dos mais belos parques de Vitória, com uma área de 130 mil metros quadrados, localizado no bairro Santa Luíza. O parque é um dos mais visitados da cidade, com uma grande área verde, lago, pista de caminhada, quadras de esportes, parquinho infantil e um mirante com vista para a cidade. O parque é um ótimo lugar para passear com a família, fazer piquenique, praticar esportes ou simplesmente relaxar em meio à natureza.</ion-card-subtitle>
+    </ion-card-content>
+  </ion-card>
+
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title>O que tem?</ion-card-title>
+    </ion-card-header>
+    <ion-item>
+      <ion-icon name="wifi" slot="start"></ion-icon>
+      <ion-label>Internet Livre (Vitória Online)</ion-label>
+    </ion-item>
+    <ion-item>
+      <ion-icon name="happy-outline" slot="start"></ion-icon>
+      <ion-label>Parquinhos</ion-label>
+    </ion-item>
+    <ion-item>
+      <ion-icon name="football-outline" slot="start"></ion-icon>
+      <ion-label>Campo de futebol</ion-label>
+    </ion-item>
+  </ion-card>
+
+  <ion-card>
+    <ion-accordion-group>
+      <ion-accordion value="first">
+        <ion-item slot="header" color="light">
+          <ion-icon name="time-outline" slot="start"></ion-icon>
+          <ion-label>Horário de funcionamento</ion-label>
+        </ion-item>
+        <div class="ion-padding" slot="content">
+          <ion-list>
+            <ion-item>
+              <ion-label>Segunda-feira</ion-label>
+              <ion-label>06:00 às 18:00</ion-label>
+            </ion-item>
+            <ion-item>
+              <ion-label>Terça-feira</ion-label>
+              <ion-label>06:00 às 18:00</ion-label>
+            </ion-item>
+            <ion-item>
+              <ion-label>Quarta-feira</ion-label>
+              <ion-label>06:00 às 18:00</ion-label>
+            </ion-item>
+            <ion-item>
+              <ion-label>Quinta-feira</ion-label>
+              <ion-label>06:00 às 18:00</ion-label>
+            </ion-item>
+            <ion-item>
+              <ion-label>Sexta-feira</ion-label>
+              <ion-label>06:00 às 18:00</ion-label>
+            </ion-item>
+            <ion-item>
+              <ion-label>Sábado</ion-label>
+              <ion-label>06:00 às 18:00</ion-label>
+            </ion-item>
+            <ion-item>
+              <ion-label>Domingo</ion-label>
+              <ion-label>06:00 às 18:00</ion-label>
+            </ion-item>
+          </ion-list>
+        </div>
+      </ion-accordion>
+
+      <ion-accordion value="second">
+        <ion-item slot="header" color="light">
+          <ion-icon name="location-outline" slot="start"></ion-icon>
+          <ion-label>Como chegar</ion-label>
+        </ion-item>
+        <div class="ion-padding" slot="content">
+          <ion-list>
+            <ion-item>
+              <ion-label>Endereço</ion-label>
+              <ion-label>Av. César Hilal, 1 - Santa Luíza, Vitória - ES, 29045-000</ion-label>
+            </ion-item>
+            <ion-item>
+              <ion-label>Telefone</ion-label>
+              <ion-label>(27) 3382-6430</ion-label>
+            </ion-item>
+            <ion-item>
+              <ion-label>Veja no maps</ion-label>
+              <ion-button fill="outline" slot="end" href="https://www.google.com/maps/place/Parque+Pedra+da+Cebola/data=!4m7!3m6!1s0xb81804ad481d6f:0x71875203a67637ac!8m2!3d-20.2765669!4d-40.2977346!16s%2Fg%2F11b7005129!19sChIJbx1IrQQYuAARrDd2pgNSh3E?authuser=0&hl=pt-BR&rclk=1" target="_blank">Ver no mapa</ion-button>
+            </ion-item>
+          </ion-list>
+        </div>
+      </ion-accordion>
+
+    </ion-accordion-group>
+
+  </ion-card>
+
+
+
+
+</ion-content>
