@@ -1,2 +1,2 @@
-Este aplicativo foi desenvolvido com framework Ionic com Angular.
-Desenvolvido com o objetivo de aprender funções e estruturas básicas de um projeto Ionic.
+Desenvolvido com o objetivo de compreender e aplicar conceitos básicos do Angular, Ionic e TypeScript, esta aplicação híbrida tem como objetivo, alem do aprendizado, apresentar um pouco do espírito santo para turistas, mostrando os principais pontos turísticos, algumas praias e elementos que disperta a curiosidade no usuário e desenvolva a vontade de conhecer.
+Aplicativo base, é possível implementar mais pontos turisticos e mais opções de praias dada a estrutura inicial do projeto.
